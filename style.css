@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	outline: none;
+	text-decoration: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--soft-magenta: hsl(300, 69%, 71%);
+}
+
+main {
+	width: 100%;
+	background-image: url(images/bg-desktop.svg);
+	background-size: cover;
+	background-color: var(--violet);
+	background-position: center center;
+	padding: 5rem 10rem;
+	color: #fff;
+}
+
+.logo-wrapper {
+	width: 30rem;
+	margin-bottom: 5rem;
+}
+
+.logo-wrapper img {
+	width: 100%;
+}
+
+.main-wrapper {
+	width: 100%;
+	display: flex;
+}
+
+.main-img-wrapper {
+	width: 50%;
+}
+
+.main-img-wrapper img {
+	width: 100%;
+}
+
+.main-text-wrapper {
+	width: 50%;
+	padding-left: 5rem;
+	padding-top: 7rem;
+}
+.main-text-wrapper h1 {
+	font-size: 4rem;
+	width: 50rem;
+	margin-bottom: 3rem;
+}
+.main-text-wrapper p {
+	font-size: 1.7rem;
+	width: 60rem;
+	line-height: 2.5rem;
+	margin-bottom: 3rem;
+}
+.main-text-wrapper button {
+	width: 20rem;
+	height: 5rem;
+	border-radius: 3rem;
+	border: none;
+	box-shadow: 5px 5px 20px 1px rgb(49, 48, 48);
+	background-color: #fff;
+	font-size: 1.6rem;
+	letter-spacing: .1rem;
+	color: var(--violet);
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.main-text-wrapper button:hover {
+	background-color: var(--soft-magenta);
+	color: #fff;
+}
+
+.social-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 5rem;
+}
+
+.social a {
+	display: inline-block;
+	color: #fff;
+	margin-right: 1.5rem;
+	text-align: center;
+	border: 2px solid #fff;
+	padding: 1rem;
+	border-radius: 50%;
+	transition: all .5s ease;
+}
+.social a i {
+	font-size: 3rem;
+}
+.social a:hover {
+	color: var(--soft-magenta);
+	border: 2px solid var(--soft-magenta);
+}
+
+@media (max-width: 1280px) {
+	main {
+		padding: 5rem;
+	}
+	.main-text-wrapper p {
+		width: 50rem;
+	}
+}
+@media (max-width: 1024px) {
+	html {
+		font-size: 55%;
+	}
+	.main-text-wrapper {
+		padding-top: 0rem;
+	}
+	.main-text-wrapper h1 {
+		width: 100%;
+	}
+	.main-text-wrapper p {
+		width: 100%;
+	}
+}
+@media (max-width: 800px) {
+	.main-text-wrapper h1 {
+		font-size: 2rem;
+	}
+	.main-text-wrapper p {
+		font-size: 1.5rem;
+		line-height: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.main-wrapper {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.main-img-wrapper {
+		width: 100%;
+	}
+	.main-text-wrapper {
+		width: 100%;
+		padding-left: 0;
+		margin-top: 5rem;
+		text-align: center;
+	}
+	.main-text-wrapper h1 {
+		font-size: 4rem;
+		margin-bottom: 1rem;
+	}
+	.main-text-wrapper p {
+		font-size: 1.7rem;
+	}
+	.main-text-wrapper button {
+		width: 25rem;
+		height: 5rem;
+	}
+	.social-wrapper {
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (max-width: 390px) {
+	.logo-wrapper {
+		width: 15rem;
+	}
+	.main-text-wrapper h1 {
+		font-size: 2.5rem;
+	}
+	.social a i {
+		font-size: 1.7rem;
+	}
+}
+@media (max-width: 375px) {
+	main {
+		background-image: url(images/bg-mobile.svg);
+	}
+}
